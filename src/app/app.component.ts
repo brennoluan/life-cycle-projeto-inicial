@@ -33,4 +33,8 @@ export class AppComponent implements OnInit, DoCheck {
   ngDoCheck(): void {
     this.listaService.atualizarLocalStorage();
   }
+
+  limparLista(): void {
+    this.listaDeCompras = [];
+  }
 }
