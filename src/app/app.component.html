@@ -6,7 +6,7 @@
       <h4 class="title-list">Lista de Compras</h4>
       <div *ngIf="listaDeCompras.length !== 0 else naoTemItem">
         <div *ngFor="let item of listaDeCompras">
-        <app-item [item]="item" (emitindoItemParaEditar)="editarItem($event)"></app-item>
+        <app-item [item]="item" (emitindoItemParaEditar)="editarItem($event)" (emitindoItemParaDeletar)="deletarItem($event)"></app-item>
       </div>
       </div>      
     </div>
